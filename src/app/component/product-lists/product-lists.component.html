@@ -1,0 +1,18 @@
+<app-products></app-products>
+<!-- Start Products Section -->
+<section class="container">
+    <div class="row no-gutters">
+        <ng-container *ngFor="let item of productList">
+            <div class="col-md-4 h-100 my-2">
+                <div class="card mx-1 my-1 p-3">
+                    <img class="mx-auto img img-fluid" src="{{item.image}}" alt="">
+                    <h5 class="prod-text">{{item.title}}</h5>
+                    <p class="prod-text">{{item.description}}</p>
+                    <p><b>${{item.price}}</b></p>
+                    <button class="btn btn-primary">Add To Cart</button>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</section>
+<!-- End Products Section -->
